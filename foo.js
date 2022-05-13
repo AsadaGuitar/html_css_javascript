@@ -1,7 +1,6 @@
 // コンソールに出力する。
 console.log("hello");
 
-
 // htmlファイルの要素からid指定で要素を取得する。
 let red      = document.getElementById("red");
 let blue     = document.getElementById("blue");
@@ -34,8 +33,7 @@ const btn = document.getElementsByTagName("button");
 
 for (let i=0; i < btn.length; i++) {
     btn[i].addEventListener("click", function(e){
-        let parent_id =  e.target.parentNode.id;
-        let parent = document.getElementById(parent_id);
+        let parent =  e.target.parentNode;
         let txt = parent.getElementsByClassName("item-txt")[0];
 
         // 背景色を取得出来なかったのでテキストで条件分岐
