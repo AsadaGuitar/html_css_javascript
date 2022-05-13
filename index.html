@@ -1,0 +1,45 @@
+<!-- 
+    HTML のアレコレ 
+        覚える必要がないタグについては呪文と記述。
+-->
+
+<!-- 呪文 -->
+<!DOCTYPE html>
+
+<!-- Htmlデータ -->
+<html>
+    <!-- headタグ：　Htmlのメタデータ情報などを記述する箇所 -->
+    <head>
+        <!-- 文字コードを指定 -->
+        <meta charset="utf-8">
+        <!-- Htmlのタイトル、ブラウザ上部にタイトルとして表示される。 -->
+        <title>Mitsu Company</title>
+        
+        <!-- css読込 ref：読込むファイルの書式を定義。href：ファイルパスを定義。-->
+        <link rel="stylesheet" href="./boo.css" />
+    </head>
+    
+    <!-- bodyタグ：　この中に表示内容を記述する。 -->
+    <body>
+        <!-- divタグ： 正方形のブロックみたいなもん。-->
+        <!-- idフィールド：ユニークな要素として指定したい時に使う。重複不可-->
+        <div id="container">
+            <!-- classフィールド：要素をまとめて指定する事ができる。重複可能-->
+            <div class="item" id="red">
+                <!-- pタグ：テキストを要素として書きたい時に使う。-->
+                <p class="item-txt" id="red-txt">The color of this elem is red.</p>
+                <!--buttonタグ：押せる。jsを使って押下後に処理を走らせる事が出来る。-->
+                <button id="red-btn">push me !</button>
+            </div>
+
+            <div class="item" id="blue">
+                <p class="item-txt" id="blue-txt">The color of this elem is blue.</p>
+                <button id="blue-btn">push me !</button>
+            </div>
+        </div>
+
+        <!-- js読込 src：読込むファイルの書式を定義。href：ファイルパスを定義。-->
+        <!-- Html要素を操作する場合はbodyタグ下部に記述する -->
+        <script type="text/javascript" src="./foo.js"></script>
+    </body>
+</html>

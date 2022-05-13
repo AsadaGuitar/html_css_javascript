@@ -1,0 +1,44 @@
+/* コメント */
+
+/* #any でid指定 */
+#container {
+    /* 呪文　中の要素を横並びを配置させる */
+    display: flex;
+    flex-direction: row;
+}
+
+/* .any でclassを指定 */
+.item {
+    width: 300px;
+    height: 200px;
+
+    /* 呪文　中の要素中央縦にを配置させる */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item-txt {
+    /* フォントサイズを指定 */
+    font-size: 18px;
+    /* カラーは予約語、rgbd、カラーコードのいずれかで指定可能 */
+    /* テキストカラーを指定 */
+    color: #ffffff;
+}
+
+#red {  
+    /* 背景色を指定 */
+    background-color: red;
+}
+#blue {
+    background-color: blue;
+}
+
+/* any でタグを指定 */
+button {
+    width: 100px;
+    height: 30px;
+    /* 枠線を削除 */
+    border: none;
+    /* 丸みを指定 */
+    border-radius: 5px;
+}
